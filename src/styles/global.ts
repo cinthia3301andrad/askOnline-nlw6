@@ -12,10 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     --purple-300: #9F75FF;
     --purple-400: #9164FA; 
     --purple-500: #8257E5;
-    --purple-800: #6F48C9;
+    --pink-01: #FF60FF;
 
     --primary_01: #19395E;
     --primary_02: #73B1F7;
+    --primary_002: #50BEF7;
     --primary_03: #3A86DE;
     --primary_04: #35485E;
     --primary_05:#2C67AB;

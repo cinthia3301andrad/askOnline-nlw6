@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerHome = styled.section`
+export const ContainerNewRoom = styled.section`
     display: flex;
     align-items: stretch;
 
@@ -60,6 +60,12 @@ export const MainContent = styled.div`
     > img {
         align-self: center;
     }
+
+    h2 {
+        font: 1.8rem;
+        margin: 35px 0 24px;
+        font-family: Nunito, sans-serif;
+    }
     
     form {
         input {
@@ -77,6 +83,16 @@ export const MainContent = styled.div`
 
         button, input {
             width: 100%;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        color: var(--gray-200);
+        margin-top: 16px;
+
+        a {
+            text-decoration: none;
+            color: var(--primary_002);
         }
     }
     .create-room {
