@@ -17,6 +17,7 @@ export const ContainerNewRoom = styled.section`
         background: var(--primary_02);
         color: var(--white);
         img {
+            width: 80%;
             max-width: 320px;
         }
         strong {

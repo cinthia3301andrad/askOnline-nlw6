@@ -17,6 +17,8 @@ export const ContainerHome = styled.section`
         background: var(--primary_02);
         color: var(--white);
         img {
+            width: 80%;
+            min-width: 50px;
             max-width: 320px;
         }
         strong {
