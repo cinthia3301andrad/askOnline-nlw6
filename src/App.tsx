@@ -1,14 +1,14 @@
-import firebase from 'firebase';
-import { createContext, useEffect, useState } from 'react';
-import {Route, BrowserRouter} from 'react-router-dom'
+
+import {Route, BrowserRouter, Switch} from 'react-router-dom'
 
 import { Home } from "./pages/home";
 import { NewRoom } from "./pages/newRoom";
-import { auth } from './services/firebase';
+import { Room } from './pages/room';
 
 import { GlobalStyle } from "./styles/global";
 
 import {AuthContextProvider} from './contexts/AuthContext'
+
 
 
 function App() {
@@ -19,8 +19,12 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <AuthContextProvider>
-          <Route path="/" exact component={Home}/>
-          <Route path="/rooms/new" exact component={NewRoom}/>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/rooms/new" exact component={NewRoom}/>
+            <Route path="/rooms/:id" exact component={Room}/>
+          </Switch>
+
         </AuthContextProvider>
       </BrowserRouter>
   </>

@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerButton = styled.button`
-  display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 64px;
     height: 50px;
     border-radius:8px;
     font-weight: 500;
