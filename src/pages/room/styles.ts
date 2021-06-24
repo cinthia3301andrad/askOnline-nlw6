@@ -71,7 +71,25 @@ export const ContainerRoom = styled.section`
 
                 margin-top: 16px;
 
-                span {
+                .user-info {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        margin-left: 8px;
+                        color: var(--gray-800);
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
+                }
+
+                >span {
                     font-size: 0.9rem;
                     color: var(--gray-500);
                     font-weight: 500;
