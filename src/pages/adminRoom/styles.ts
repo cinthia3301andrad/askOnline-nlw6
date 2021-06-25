@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerRoom = styled.section`
     header {
         padding: 24px;
-        border-bottom: 1px solid var(--gray-50);
+        border-bottom: 2px solid var(--gray-100);
     }
 
     .content {
@@ -17,6 +17,13 @@ export const ContainerRoom = styled.section`
         >img {
             max-height: 45px;
         }
+        > div {
+            display: flex;
+            gap: 16px;
+            button {
+                height: 40px;
+            }
+        }
 
     }
 
@@ -24,6 +31,7 @@ export const ContainerRoom = styled.section`
         max-width: 800px;
         margin: 0 auto;
         padding: 0 15px;
+
         .room-title {
             margin: 32px 0 24px;
             display: flex;
