@@ -14,8 +14,14 @@ export const ContainerRoom = styled.section`
         max-width: 1120px;
         margin: 0  auto;
 
+        >h1 {
+            font-size: 1rem;
+        }
+
         >img {
-            max-height: 45px;
+            height: 100%;
+            border-radius: 50%;
+            max-height: 60px;
         }
         > div {
             display: flex;

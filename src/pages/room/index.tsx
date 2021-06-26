@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 import {useParams} from 'react-router-dom'
-import logoImg from '../../assets/images/logo.svg'
+import logoImg from '../../assets/images/logo.png'
 import { Button } from '../../components/Button'
 import { Question } from '../../components/question'
 import {RoomCode} from '../../components/roomCode'

@@ -1,5 +1,5 @@
 import {useHistory, useParams} from 'react-router-dom';
-import logoImg from '../../assets/images/logo.svg';
+import logoImg from '../../assets/images/logo.png';
 import { Button } from '../../components/Button';
 import { Question } from '../../components/question';
 import {RoomCode} from '../../components/roomCode';
@@ -57,6 +57,7 @@ export function AdminRoom() {
            <header>
                <div className="content">
                    <img src={logoImg} alt="logo da aplicação" />
+                   <h1>Gerencie suas perguntas</h1>
                   <div><RoomCode  code={roomId}/>
                   <Button isOutlined onClick={handleEndRoom}>Encerrar sala</Button></div>
                </div>

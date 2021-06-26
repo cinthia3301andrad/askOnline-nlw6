@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContainerRoom = styled.section`
     header {
         padding: 24px;
-        border-bottom: 1px solid var(--gray-50);
+        border-bottom: 2px solid var(--gray-100);
+
     }
 
     .content {
@@ -15,7 +16,8 @@ export const ContainerRoom = styled.section`
         margin: 0  auto;
 
         >img {
-            max-height: 45px;
+            max-height: 65px;
+            border-radius: 50%;
         }
 
     }
