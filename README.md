@@ -12,7 +12,6 @@
 ### 🛠 Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
-- [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled-Component](https://styled-components.com/)
 - [Firebase](https://firebase.google.com/?gclid=Cj0KCQjw_dWGBhDAARIsAMcYuJwnUiuxXLNXHPiwx7j5-tMzXdGXG4-jnKmfpBBE7cQbAJTipHT3RdcaAsQnEALw_wcB&gclsrc=aw.ds)
