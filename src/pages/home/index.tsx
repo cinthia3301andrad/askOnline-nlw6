@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react'
 import {useHistory} from 'react-router-dom'
 
 import illustrationImg from '../../assets/images/illustration.svg'
-import logoImg from '../../assets/images/logo.svg'
+import logoImg from '../../assets/images/logo.png'
 import googleIconImg from '../../assets/images/google-icon.svg'
 
 import {Button} from '../../components/Button'
@@ -41,7 +41,11 @@ export function Home() {
             return;
         }
 
-        history.push(`/rooms/${roomCode}`)
+        if(roomRef.val().endedAt) {
+            alert("Room already closed.");
+            return;
+        }
+        history.push(`/rooms/${roomCode}`);
 
         
     }
@@ -49,8 +53,8 @@ export function Home() {
         <ContainerHome>
             <aside>
                 <img src={illustrationImg} alt="ilustração perguntas e respostas" />
-                <strong>Crie salas de Q&amp; A ao-vivo</strong>
-                <p>Tire as dúvidas da sua audiência em tempo-real</p>
+                <strong>Crie salas de Q&amp;A ao-vivo</strong>
+                <p>Tire as dúvidas da sua audiência em tempo-real!</p>
             </aside>
 
             <main>

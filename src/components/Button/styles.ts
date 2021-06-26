@@ -1,19 +1,24 @@
 import styled from "styled-components";
 
-export const ContainerButton = styled.button`
+interface ContainerProps {
+    isOutlined: boolean;
+}
+export const ContainerButton = styled.button<ContainerProps>`
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 50px;
+    height: 45px;
     border-radius:8px;
-    font-weight: 500;
-    background: var(--primary_02);
-    color: var(--white);
+    font-weight: 600;
+ 
+    background: ${props => (props.isOutlined ? '#FFF' : '#73B1F7')};
+    border: ${props => (props.isOutlined ? '1px solid #73B1F7' : 0)};
+    color: ${props => (props.isOutlined ? '#73B1F7' : '#fff')};
     padding: 0  32px;
 
     cursor: pointer;
-    border: 0;
+
         
     transform: filter 0.5s;
     img {

@@ -4,7 +4,6 @@ export const ContainerRoom = styled.section`
     header {
         padding: 24px;
         border-bottom: 2px solid var(--gray-100);
-
     }
 
     .content {
@@ -15,9 +14,21 @@ export const ContainerRoom = styled.section`
         max-width: 1120px;
         margin: 0  auto;
 
+        >h1 {
+            font-size: 1rem;
+        }
+
         >img {
-            max-height: 65px;
+            height: 100%;
             border-radius: 50%;
+            max-height: 60px;
+        }
+        > div {
+            display: flex;
+            gap: 16px;
+            button {
+                height: 40px;
+            }
         }
 
     }
@@ -26,6 +37,7 @@ export const ContainerRoom = styled.section`
         max-width: 800px;
         margin: 0 auto;
         padding: 0 15px;
+
         .room-title {
             margin: 32px 0 24px;
             display: flex;

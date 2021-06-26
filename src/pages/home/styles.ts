@@ -60,6 +60,8 @@ export const MainContent = styled.div`
     max-width: 320px;
 
     > img {
+        width: 100px;
+        border-radius: 50%;
         align-self: center;
     }
     
